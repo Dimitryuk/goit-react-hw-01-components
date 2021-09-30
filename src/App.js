@@ -1,6 +1,8 @@
 import React from 'react';
 import Profile from './Components/SocialProfile/Profile';
 import Statistics from './Components/Statistics/Statistics.jsx';
+import FriendList from './Components/FriendsList/FriendsList';
+import TransactionHistory from './Components/Transactions/TransactionHistory.jsx';
 import user from './Components/Data/user.json';
 import friends from './Components/Data/friends.json';
 import statisticalData from './Components/Data/statistical-data.json';
@@ -17,6 +19,8 @@ export default function App() {
         stats={user.stats}
       />
       <Statistics title="Upload stats" stats={statisticalData} />
+      <FriendList friends={friends} />
+      <TransactionHistory items={transactions} />
     </>
   );
 }
