@@ -1,0 +1,46 @@
+.name {
+  color: green;
+  font-size: 2rem;
+}
+.tag {
+  font-style: italic;
+  font-size: 1.5rem;
+
+  color: indianred;
+}
+.location {
+  font-size: 1.5rem;
+}
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 30%;
+  background-color: rgb(136, 85, 85);
+}
+.stats {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+.label {
+  margin-right: 7px;
+}
+.quantity {
+  margin-right: 5px;
+  color: lightcoral;
+}

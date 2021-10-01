@@ -1,0 +1,30 @@
+.statistics {
+  background-color: rgb(160, 231, 231);
+}
+.stat__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  background-color: rgb(66, 176, 219);
+}
+.title {
+  display: flex;
+  justify-content: center;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  margin-right: 15px;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+}
+.percentage {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+.label {
+  color: rgb(80, 27, 18);
+}

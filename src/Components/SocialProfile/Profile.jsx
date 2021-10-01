@@ -1,26 +1,28 @@
 import PropTypes from 'prop-types';
+import s from './ProfileStyle.module.css';
+console.log(s);
 export default function Profile({ name, tag, location, avatar, stats }) {
   return (
-    <div class="profile">
-      <div class="description">
-        <img src={avatar} alt="Аватар пользователя" class="avatar" />
-        <p class="name">{name}</p>
-        <p class="tag">@{tag}</p>
-        <p class="location">{location}</p>
+    <div className={s.profile}>
+      <div className={s.description}>
+        <img src={avatar} alt="Аватар пользователя" className={s.avatar} />
+        <p className={s.name}>{name}</p>
+        <p className={s.tag}>@{tag}</p>
+        <p className={s.location}>{location}</p>
       </div>
 
-      <ul class="stats">
+      <ul className={s.stats}>
         <li>
-          <span class="label">Followers</span>
-          <span class="quantity">{stats.followers}</span>
+          <span className={s.label}>Followers</span>
+          <span className={s.quantity}>{stats.followers}</span>
         </li>
         <li>
-          <span class="label">Views</span>
-          <span class="quantity">{stats.views}</span>
+          <span className={s.label}>Views</span>
+          <span className={s.quantity}>{stats.views}</span>
         </li>
         <li>
-          <span class="label">Likes</span>
-          <span class="quantity">{stats.likes}</span>
+          <span className={s.label}>Likes</span>
+          <span className={s.quantity}>{stats.likes}</span>
         </li>
       </ul>
     </div>
