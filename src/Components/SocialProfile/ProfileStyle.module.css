@@ -16,6 +16,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  outline: 1px black;
 }
 .description {
   display: flex;
